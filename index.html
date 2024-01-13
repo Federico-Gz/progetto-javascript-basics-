@@ -12,11 +12,11 @@
     <meta name="description" content="Contatore">
 
     <!--OG tags-->
-    <meta property="og:title" content="">
-    <meta property="og:description" content="">
+    <meta property="og:title" content="Counter Game">
+    <meta property="og:description" content="Conta il numero di navicelle che vedi passare">
     <meta property="og:image" content="">
     <meta property="og:url" content="">
-    <meta property="og:type" content="applicazione">
+    <meta property="og:type" content="game">
 
     <!--robots tag-->
     <meta name="robots" content="all">
@@ -37,10 +37,10 @@
         <!--Descrizione Container Start-->
         <div class="descrizione">
             
-            <h1>Sfidiamoci con il contatore</h1>
-            <h2>Indovina il numero esatto di navicelle che vedi passare, ma attento, se vedi un asteroide devi togliere una navicella </h2>
-            <p>Quando sei pronto, premi OK e prova ad indovinare il numero esatto usando il counter'</p>
-            <button class="go-on">OK</button>
+            <h1 class="margin">COUNTER GAME</h1>
+            <h2 class="margin">Indovina il numero esatto di navicelle che vedi passare </h2>
+            <p class="margin">Quando sei pronto, premi CONTINUA e prova ad indovinare il numero esatto usando il counter</p>
+            <button id="goOn">CONTINUA</button>
         </div>
         <!--Descrizione Container End-->
 
@@ -52,11 +52,11 @@
 
         <!--Counter Container Start-->
         <div class="counter-container">
-            <div class="counter box-c">0</div>
+            <div id="counter" class="box-c"></div>
             <div class="pulsanti">
-                <button id="sub" class="box">-</button>
-                <button id="add" class="box">+</button>
-                <button id="conferma" class="box">OK</button>
+                <button id="sub" class="box"></button>
+                <button id="add" class="box"></button>
+                <button id="conferma" class="box"></button>
             </div>
         </div>
         <!--Counter Container End-->
