@@ -71,30 +71,38 @@ function startGame() {
 
 
 function generaNavs() { 
-
   if (isGameStarted && navsGenerated < navsCounter) {
-    let ship = document.createElement('div');
-    ship.classList.add('navs');
-    ship.textContent = navs;
-    spaceContainer.appendChild(ship);
-    navsGenerated++;
+      let ship = document.createElement('div');
+      ship.classList.add('navs');
+      ship.textContent = navs;
+      spaceContainer.appendChild(ship);
+      navsGenerated++;
 
-    ship.classList.add('moveNavs');
+      // Imposta la velocità casuale
+      const speed = `${Math.random() * 2 + 1}s`;
 
-    ship.addEventListener('animationend', function () {
-      spaceContainer.removeChild(ship);
+      ship.style.animationDuration = speed;
 
-      if (navsGenerated < navsCounter) {
-        generaNavs();
-      } else {
-        conferma.disabled = false;
+      if(Math.random() < 0.5){
+        ship.style.left = '50px';
+      } else{
+        ship.style.left = '450px';
       }
-       
-    });
+
+      ship.classList.add('moveNavs');
+
+      ship.addEventListener('animationend', function () {
+          spaceContainer.removeChild(ship);
+
+          if (navsGenerated < navsCounter) {
+              generaNavs();
+          } else {
+              conferma.disabled = false;
+          }
+      });
   }
-
-
 }
+
   
 
 function showResult(congratulations) {
