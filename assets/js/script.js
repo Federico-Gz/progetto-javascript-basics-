@@ -14,7 +14,7 @@ let navsGenerated = 0;
 let fraseFinale = document.getElementById('fraseFinale');
 let risultato = document.querySelector('.risultato');
 
-//inizializzazione
+// inizializzazione counter 
 sub.textContent = "-";
 add.textContent = "+";
 counter.innerHTML = "0";
@@ -22,6 +22,12 @@ conferma.textContent = "OK";
 sub.disabled = true;
 add.disabled = true;
 conferma.disabled = true;
+
+// assegnazione stili pulsanti
+sub.classList.add('box');
+add.classList.add('box');
+conferma.classList.add('box');
+
 
 
 goOn.onclick = function () {
@@ -78,19 +84,22 @@ function generaNavs() {
       spaceContainer.appendChild(ship);
       navsGenerated++;
 
-      // Imposta la velocità casuale
+      //imposta la velocità casuale
       const speed = `${Math.random() * 2 + 1}s`;
-
       ship.style.animationDuration = speed;
 
+      //posizione partenza navicella
       if(Math.random() < 0.5){
         ship.style.left = '50px';
-      } else{
+      } else if (window.innerWidth < 600){
+        ship.style.left = '250px';
+      } else {
         ship.style.left = '450px';
       }
 
       ship.classList.add('moveNavs');
 
+      //rimuove navicella alla fine dell'animazione
       ship.addEventListener('animationend', function () {
           spaceContainer.removeChild(ship);
 
