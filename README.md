@@ -36,4 +36,4 @@ Benvenuto al Counter Game! Questo è un semplice gioco web in cui devi indovinar
 ## Come eseguire il gioco
 
 > Clona questo repository sul tuo computer:
-git clone https://github.com/tuonome/contatore-game.git
+git clone 
