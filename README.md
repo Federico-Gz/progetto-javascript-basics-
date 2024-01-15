@@ -2,6 +2,9 @@
 
 Benvenuto al Counter Game! Questo è un semplice gioco web in cui devi indovinare il numero esatto di "navicelle" che passano.
 
+
+![Ciao](assets/img/schermataDiGioco.png)
+
 ---
 
 ## Come giocare
@@ -18,6 +21,15 @@ Benvenuto al Counter Game! Questo è un semplice gioco web in cui devi indovinar
 - HTML
 - CSS
 - JavaScript
+
+---
+
+## Struttura progetto
+
+- index.html: contiene la struttura html del gioco;
+- assets/css/styles.css: file css per gli stili;
+- assets/js/script.js: file Javascript per la logica del gioco;
+- assets/img/: cartella contenente l'immagine di sfondo del gioco.
 
 ---
 
