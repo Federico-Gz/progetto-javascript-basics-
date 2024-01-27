@@ -3,7 +3,7 @@
 Benvenuto al Counter Game! Questo è un semplice gioco web in cui devi indovinare il numero esatto di "navicelle" che passano.
 
 
-![Ciao](assets/img/schermataDiGioco.png)
+![schermata di gioco](assets/img/schermataDiGioco.png)
 
 ---
 
@@ -36,4 +36,6 @@ Benvenuto al Counter Game! Questo è un semplice gioco web in cui devi indovinar
 ## Come eseguire il gioco
 
 > Clona questo repository sul tuo computer:
-git clone 
+  gh repo clone Federico-Gz/progetto-javscript-basics
+> Vai alla pagina del gioco:
+  https://js-basics-a9e4b.web.app/
