@@ -1,37 +1,18 @@
-let counter = document.getElementById('counter');
-const sub = document.getElementById('sub');
-const add = document.getElementById('add');
-const conferma = document.getElementById('conferma');
-const reset = document.getElementById('reset');
-const descrizione = document.querySelector('.descrizione');
-const goOn = document.getElementById('goOn');
-const spaceContainer = document.querySelector('.spazio');
+
 const navs = "\u{1F680}";
 let isGameStarted = false;
 let navsCounter;
 let navsGenerated = 0;
 
-let fraseFinale = document.getElementById('fraseFinale');
-let risultato = document.querySelector('.risultato');
 
-// inizializzazione counter 
-sub.textContent = "-";
-add.textContent = "+";
-counter.innerHTML = "0";
-conferma.textContent = "OK";
+
 sub.disabled = true;
 add.disabled = true;
 conferma.disabled = true;
 
-// assegnazione stili pulsanti
-sub.classList.add('box');
-add.classList.add('box');
-conferma.classList.add('box');
-
-
 
 goOn.onclick = function () {
-  descrizione.style.display = 'none';
+  descriptionContainer.style.display = 'none';
   startGame();
 };
 
